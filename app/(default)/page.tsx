@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'Home - AppZenith',
+  description: 'AppZenith specializes in diverse mobile app solutions, from POS systems to medical and IoT applications. We bring innovation and expertise to every project, delivering tailored apps that drive success.',
 }
 
 import Hero from '@/components/hero'

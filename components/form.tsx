@@ -87,7 +87,15 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
             overlayClassName="fixed inset-0 bg-gray-800 bg-opacity-75"
             style={customStyles}
         >
-            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto overflow-auto max-h-full">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto overflow-auto max-h-full relative">
+                <button
+                    onClick={onRequestClose}
+                    className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
                 <h2 className="text-2xl font-bold mb-4 text-gray-600 text-center">
                     Start Your Project Today
                 </h2>
@@ -202,17 +210,11 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                     <button
                         type="submit"
                         disabled={isLoading}
-                        className="w-full bg-purple-600 text-white py-2 rounded-md shadow-sm hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                        className="w-full bg-green-600 text-white py-3 rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                     >
                         {isLoading ? 'Submitting...' : 'Submit'}
                     </button>
                 </form>
-                <button
-                    onClick={onRequestClose}
-                    className="mt-2 w-full bg-gray-300 text-gray-700 py-2 rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
-                >
-                    Close
-                </button>
             </div>
         </Modal>
     )

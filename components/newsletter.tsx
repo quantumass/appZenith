@@ -1,4 +1,56 @@
+'use client'
+
+import React, { useState, ChangeEvent, FormEvent } from 'react'
+
+interface FormData {
+  email: string
+}
+
 export default function Newsletter() {
+
+  const [isLoading, setIsLoading] = useState(false)
+
+  const [notification, setNotification] = useState<{ message: string; type: 'success' | 'error' } | null>(null)
+
+  const [formData, setFormData] = useState<FormData>({
+    email: ''
+  })
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target
+    setFormData({ ...formData, [name]: value })
+  }
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setNotification(null)
+    try {
+        const response = await fetch('/api/mail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+        setIsLoading(false)
+        if (response.ok) {
+          setFormData({email: ''})
+          setNotification({ message: 'Thanks for your subscription to our newsletter!', type: 'success' })
+          console.log('Thanks for your subscription to our newsletter')
+        } else {
+          setNotification({ message: 'Error submitting form, try again later', type: 'error' })
+          console.error('Error sending email')
+        }
+    } catch (error) {
+        setIsLoading(false)
+        setNotification({ message: 'Error submitting form, try again later', type: 'error' })
+        console.error('Error:', error)
+    }
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -28,10 +80,29 @@ export default function Newsletter() {
             </div>
 
             {/* CTA form */}
-            <form className="w-full lg:w-1/2">
+            <form onSubmit={handleSubmit} className="w-full lg:w-1/2">
+              {notification && (
+                  <div className={`my-2 p-2 rounded ${notification.type === 'success' ? 'text-green-800 bg-green-200' : 'text-red-800 bg-red-200'} text-center`}>
+                      {notification.message}
+                  </div>
+              )}
               <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:max-w-none">
-                <input type="email" className="w-full appearance-none bg-purple-800 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" placeholder="Your best email…" aria-label="Your best email…" />
-                <a className="btn text-purple-600 bg-purple-100 hover:bg-white shadow" href="#0">Subscribe</a>
+                <input 
+                  type="email" 
+                  name="email" 
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full appearance-none bg-purple-800 border border-purple-500 focus:border-purple-300 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-purple-400" 
+                  placeholder="Your best email…" 
+                  aria-label="Your best email…" 
+                />
+                <button 
+                  type="submit"
+                  disabled={isLoading}
+                  className="btn text-purple-600 bg-purple-100 hover:bg-white shadow"
+                >
+                  {isLoading ? 'Subscribing...' : 'Subscribe'}
+                </button>
               </div>
               {/* Success message */}
               {/* <p className="text-center lg:text-left lg:absolute mt-2 opacity-75 text-sm">Thanks for subscribing!</p> */}
