@@ -5,6 +5,11 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
+  corePlugins: {
+    textAlign: true,
+    margin: true,
+    padding: true
+  },
   theme: {
     extend: {
       colors: {
@@ -70,6 +75,13 @@ module.exports = {
         '98': '.98'
       },
     },
+  },
+  variants: {
+    extend: {
+      textAlign: ['rtl'],
+      margin: ['rtl'],
+      padding: ['rtl']
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

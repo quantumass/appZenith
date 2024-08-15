@@ -1,0 +1,170 @@
+{
+  "HomePage": {
+    "title": "Gestalten Sie die Zukunft mit",
+    "highlight": "AppZenith",
+    "description": "Eine umfassende Lösung für Ihre mobilen Entwicklungsbedürfnisse.",
+    "cta": "Jetzt starten",
+    "cta2": "Video ansehen",
+    "heroTitle": "AppZenith Erhebe Deine App-Erfahrung",
+    "heroDescription": "AppZenith spezialisiert sich auf vielfältige mobile App-Lösungen, von POS-Systemen bis hin zu medizinischen und IoT-Anwendungen. Wir bringen Innovation und Fachwissen in jedes Projekt ein und liefern maßgeschneiderte Apps, die Erfolg bringen.",
+    "startProjectButton": "Beginnen Sie Ihr Projekt noch heute"
+  },
+  "FormModal": {
+    "modalTitle": "Beginnen Sie Ihr Projekt noch heute",
+    "nameLabel": "Name",
+    "emailLabel": "E-Mail",
+    "projectTitleLabel": "Projekttitel",
+    "projectDetailsLabel": "Projektdetails",
+    "budgetLabel": "Budget",
+    "deadlineLabel": "Frist",
+    "submitting": "Übermittlung...",
+    "submit": "Einreichen",
+    "emailSuccess": "E-Mail erfolgreich gesendet!",
+    "emailError": "Fehler beim Absenden des Formulars, versuchen Sie es später erneut"
+  },
+  "FAQ": {
+    "title": "Häufig gestellte Fragen",
+    "description": "Finden Sie Antworten auf einige der häufigsten Fragen zu unseren Dienstleistungen.",
+    "question1": {
+      "title": "Welche Dienstleistungen bieten Sie an?",
+      "answer": "Wir bieten eine Reihe von mobilen App-Entwicklungsdiensten an, einschließlich iOS-App-Entwicklung, App-Architektur & Design, UI/UX-Design, App-Beratung & Strategie, App-Prototyping, App-Tests & Qualitätssicherung, App-Wartung & Support und App-Store-Bereitstellung."
+    },
+    "question2": {
+      "title": "Wie kann ich ein Projekt mit AppZenith starten?",
+      "answer": "Sie können Ihr Projekt starten, indem Sie uns über unsere Website kontaktieren. Klicken Sie auf die Schaltfläche 'Beginnen Sie Ihr Projekt noch heute' und füllen Sie das Kontaktformular aus. Wir werden uns so schnell wie möglich bei Ihnen melden, um Ihre Projektanforderungen zu besprechen."
+    },
+    "question3": {
+      "title": "Bieten Sie fortlaufende Wartung und Support an?",
+      "answer": "Ja, wir bieten fortlaufende Wartung und Support an, um sicherzustellen, dass Ihre App stets auf dem neuesten Stand ist und reibungslos läuft. Unser Team steht Ihnen bei Problemen oder erforderlichen Updates zur Verfügung."
+    },
+    "question4": {
+      "title": "Wie läuft der Bereitstellungsprozess im App Store ab?",
+      "answer": "Unser App-Store-Bereitstellungsdienst umfasst volle Unterstützung beim Start Ihrer App im App Store. Wir übernehmen den Einreichungs- und Genehmigungsprozess, um sicherzustellen, dass Ihre App erfolgreich veröffentlicht und zum Download bereitgestellt wird."
+    },
+    "question5": {
+      "title": "Können Sie bei der App-Entwicklung und beim Design helfen?",
+      "answer": "Absolut! Unser Team ist auf sowohl UI/UX-Design als auch Entwicklung spezialisiert, um visuell ansprechende und benutzerfreundliche Apps zu erstellen, die den Geschäftsanforderungen entsprechen."
+    }
+  },
+  "Header": {
+    "siteName": "AppZenith",
+    "home": "Startseite",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt",
+    "getStarted": "Loslegen",
+    "language": "Sprache"
+  },
+  "Footer": {
+    "description": "AppZenith bietet umfassende App-Entwicklungsdienstleistungen.",
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "mobileAppDevelopment": "Mobile App-Entwicklung",
+      "uiUxDesign": "UI/UX-Design",
+      "consulting": "Beratung"
+    },
+    "resources": {
+      "title": "Ressourcen",
+      "blog": "Blog",
+      "caseStudies": "Fallstudien",
+      "faq": "FAQ",
+      "termsOfService": "Nutzungsbedingungen",
+      "privacyPolicy": "Datenschutzrichtlinie"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "aboutUs": "Über uns",
+      "careers": "Karriere",
+      "contact": "Kontakt",
+      "press": "Presse",
+      "partners": "Partner"
+    },
+    "copyright": "© 2024 AppZenith. Alle Rechte vorbehalten."
+  },
+  "Features": {
+    "header": {
+      "title": "Unsere Hauptfunktionen",
+      "description": "Hier sind einige der Funktionen, die wir anbieten."
+    },
+    "items": {
+      "item1": {
+        "title": "iOS-App-Entwicklung",
+        "description": "Maßgeschneiderte iOS-App-Entwicklung, die den Geschäftsanforderungen entspricht."
+      },
+      "item2": {
+        "title": "App-Architektur und Design",
+        "description": "Strategische Architekturplanung für skalierbare und robuste App-Lösungen."
+      },
+      "item3": {
+        "title": "UI/UX-Design",
+        "description": "Innovative und benutzerfreundliche Designlösungen für außergewöhnliche Benutzererlebnisse."
+      },
+      "item4": {
+        "title": "App-Beratung und Strategie",
+        "description": "Expertenberatung zur Definition der besten Strategie für den Erfolg Ihrer App."
+      },
+      "item5": {
+        "title": "App-Prototyping",
+        "description": "Interaktive Prototypen zur Visualisierung und Verfeinerung Ihrer App-Konzepte."
+      },
+      "item6": {
+        "title": "App-Tests und Qualitätssicherung",
+        "description": "Umfassende Tests zur Sicherstellung einer fehlerfreien App-Erfahrung."
+      },
+      "item7": {
+        "title": "App-Wartung und Support",
+        "description": "Laufende Wartung und Support, um Ihre App auf dem neuesten Stand und reibungslos zu halten."
+      },
+      "item8": {
+        "title": "App-Store-Bereitstellung",
+        "description": "Volle Unterstützung beim Start Ihrer App im App Store, einschließlich Einreichungs- und Genehmigungsprozess."
+      }
+    },
+    "cta": {
+      "title": "Fangen Sie noch heute an!",
+      "description": "Kontaktieren Sie uns jetzt, um Ihre Reise mit unseren Dienstleistungen zu beginnen.",
+      "buttonText": "Kontaktieren Sie uns"
+    }
+  },
+  "Newsletter": {
+    "headline": "Bleiben Sie auf dem Laufenden",
+    "description": "Abonnieren Sie unseren Newsletter, um die neuesten Nachrichten vor allen anderen zu erhalten.",
+    "emailPlaceholder": "Ihre beste E-Mail…",
+    "subscriptionSuccess": "Danke für Ihr Abonnement unseres Newsletters!",
+    "submissionError": "Fehler beim Absenden des Formulars, versuchen Sie es später erneut",
+    "subscribing": "Abonnieren...",
+    "subscribe": "Abonnieren"
+  },
+  "Testimonials": {
+    "sectionHeader": "Vertrauen Sie nicht nur unserem Wort",
+    "sectionDescription": "Unsere Kunden schwärmen von unseren innovativen Lösungen und unserem exzellenten Service. Hier ist, was sie zu sagen haben:",
+    "testimonial1": "Der mobile App-Entwicklungsservice war erstklassig. Er hat unseren Workflow erheblich verbessert und die Benutzererfahrung ist fantastisch.",
+    "testimonial1Company": "CEO, TechCorp",
+    "testimonial2": "Das Designteam hat unsere Benutzeroberfläche transformiert und sie viel ansprechender und benutzerfreundlicher gemacht. Ich kann ihre Dienstleistungen sehr empfehlen!",
+    "testimonial2Company": "Produktmanager, Creative Co.",
+    "testimonial3": "Die bereitgestellten Gesundheitslösungen haben unser Patientenmanagementsystem erheblich verbessert. Die Technologie ist zuverlässig und einfach zu bedienen.",
+    "testimonial3Company": "Direktor, HealthNet",
+    "startProject": "Beginnen Sie Ihr Projekt noch heute"
+  },
+  "Zigzag": {
+    "tagline": "Erreichen Sie Ziele, die zählen",
+    "mainTitle": "Ein Produkt, unbegrenzte Lösungen",
+    "description": "Entdecken Sie unser vielfältiges Serviceangebot, das auf Ihre einzigartigen Bedürfnisse zugeschnitten ist, von innovativen App-Lösungen bis hin zu fortschrittlichen POS- und Gesundheitssystemen.",
+    "feature1": {
+      "title": "iOS & Android App-Entwicklung",
+      "subtitle": "Nahtlose mobile Lösungen",
+      "description": "Erstellung von leistungsstarken, benutzerfreundlichen mobilen Apps für sowohl iOS- als auch Android-Plattformen, die Ihre Geschäftsziele erreichen.",
+      "bullet1": "Leistungsstarke Apps für iOS und Android",
+      "bullet2": "Nahtlose Benutzererlebnisse",
+      "bullet3": "Maßgeschneiderte Lösungen für vielfältige Bedürfnisse"
+    },
+    "feature2": {
+      "title": "UI/UX-Design-Exzellenz",
+      "subtitle": "Designs, die begeistern",
+      "description": "Steigerung der Benutzerbindung durch intuitives und ästhetisch ansprechendes Design, das jede Interaktion erfreulich macht.",
+      "bullet1": "Visuell ansprechende Benutzeroberflächen",
+      "bullet2": "Intuitive Benutzererlebnisse",
+      "bullet3": "Benutzerzentrierte Designs"
+    }
+  }
+}

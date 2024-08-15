@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-
+import { useTranslations } from 'next-intl'
 import TestimonialImage01 from '@/public/images/testimonial-01.jpg'
 import TestimonialImage02 from '@/public/images/testimonial-02.jpg'
 import TestimonialImage03 from '@/public/images/testimonial-03.jpg'
@@ -9,6 +9,7 @@ import FormModal from '../components/form'
 import { useState } from 'react'
 
 export default function Testimonials() {
+    const t = useTranslations('Testimonials')
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
     const openModal = () => {
@@ -26,10 +27,9 @@ export default function Testimonials() {
                 <div className="py-12 md:py-20 border-t border-gray-800">
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                        <h2 className="h2 mb-4">Don't take our word for it</h2>
+                        <h2 className="h2 mb-4">{t('sectionHeader')}</h2>
                         <p className="text-xl text-gray-400">
-                            Our clients rave about our innovative solutions and
-                            exceptional service. Here’s what they have to say:
+                            {t('sectionDescription')}
                         </p>
                     </div>
 
@@ -59,9 +59,7 @@ export default function Testimonials() {
                                 </div>
                             </div>
                             <blockquote className="text-lg text-gray-400 grow">
-                                — The mobile app development service was
-                                top-notch. It significantly improved our
-                                workflow and the user experience is fantastic.
+                                {t('testimonial1')}
                             </blockquote>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                                 <cite className="text-gray-200 not-italic">
@@ -72,7 +70,7 @@ export default function Testimonials() {
                                     className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                                     href="#0"
                                 >
-                                    CEO, TechCorp
+                                    {t('testimonial1Company')}
                                 </a>
                             </div>
                         </div>
@@ -102,9 +100,7 @@ export default function Testimonials() {
                                 </div>
                             </div>
                             <blockquote className="text-lg text-gray-400 grow">
-                                — Their design team transformed our user
-                                interface, making it much more engaging and
-                                user-friendly. Highly recommend their services!
+                                {t('testimonial2')}
                             </blockquote>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                                 <cite className="text-gray-200 not-italic">
@@ -115,7 +111,7 @@ export default function Testimonials() {
                                     className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                                     href="#0"
                                 >
-                                    Product Manager, Creative Co.
+                                    {t('testimonial2Company')}
                                 </a>
                             </div>
                         </div>
@@ -145,9 +141,7 @@ export default function Testimonials() {
                                 </div>
                             </div>
                             <blockquote className="text-lg text-gray-400 grow">
-                                — The healthcare solutions provided have greatly
-                                enhanced our patient management system. The
-                                technology is reliable and easy to use.
+                                {t('testimonial3')}
                             </blockquote>
                             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                                 <cite className="text-gray-200 not-italic">
@@ -158,7 +152,7 @@ export default function Testimonials() {
                                     className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"
                                     href="#0"
                                 >
-                                    Director, HealthNet
+                                    {t('testimonial3Company')}
                                 </a>
                             </div>
                         </div>
@@ -171,7 +165,7 @@ export default function Testimonials() {
                         className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0 rounded"
                         href="#0"
                     >
-                        Start Your Project Today
+                        {t('startProject')}
                     </a>
                 </div>
             </div>

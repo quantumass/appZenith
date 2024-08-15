@@ -1,0 +1,179 @@
+{
+  "HomePage": {
+    "title": "Construisez l'avenir avec",
+    "highlight": "AppZenith",
+    "description": "Une solution complète pour vos besoins en développement mobile.",
+    "cta": "Commencez maintenant",
+    "cta2": "Regarder la vidéo",
+    "heroTitle": "AppZenith Elevate Your App Experience",
+    "heroDescription": "AppZenith specializes in diverse mobile app solutions, from POS systems to medical and IoT applications. We bring innovation and expertise to every project, delivering tailored apps that drive success.",
+    "startProjectButton": "Start Your Project Today"
+  },
+  "FormModal": {
+    "modalTitle": "Start Your Project Today",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "projectTitleLabel": "Project Title",
+    "projectDetailsLabel": "Project Details",
+    "budgetLabel": "Budget",
+    "deadlineLabel": "Deadline",
+    "submitting": "Submitting...",
+    "submit": "Submit",
+    "emailSuccess": "Email sent successfully!",
+    "emailError": "Error submitting form, try again later"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to some of the most common questions about our services.",
+    "question1": {
+      "title": "What services do you offer?",
+      "answer": "We offer a range of mobile app development services, including iOS app development, app architecture & design, UI/UX design, app consultation & strategy, app prototyping, app testing & quality assurance, app maintenance & support, and app store deployment."
+    },
+    "question2": {
+      "title": "How can I start a project with AppZenith?",
+      "answer": "You can start your project by contacting us through our website. Click on the 'Start Your Project Today' button and fill out the contact form. We will get back to you as soon as possible to discuss your project requirements."
+    },
+    "question3": {
+      "title": "Do you provide ongoing maintenance and support?",
+      "answer": "Yes, we provide ongoing maintenance and support to ensure your app remains up-to-date and runs smoothly. Our team is available to assist you with any issues or updates needed for your app."
+    },
+    "question4": {
+      "title": "What is the process for app store deployment?",
+      "answer": "Our app store deployment service includes full support for launching your app on the App Store. We handle the submission and approval processes to ensure your app is successfully published and available for download."
+    },
+    "question5": {
+      "title": "Can you help with app design as well as development?",
+      "answer": "Absolutely! Our team specializes in both UI/UX design and development to create visually appealing and user-friendly apps that meet your business needs."
+    }
+  },
+  "Header": {
+    "siteName": "AppZenith",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "language": "Language"
+  },
+  "Footer": {
+    "description": "AppZenith offers comprehensive app development services.",
+    "services": {
+      "title": "Our Services",
+      "mobileAppDevelopment": "Mobile App Development",
+      "uiUxDesign": "UI/UX Design",
+      "consulting": "Consulting"
+    },
+    "resources": {
+      "title": "Resources",
+      "blog": "Blog",
+      "caseStudies": "Case Studies",
+      "faq": "FAQ",
+      "termsOfService": "Terms of Service",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "company": {
+      "title": "Company",
+      "aboutUs": "About Us",
+      "careers": "Careers",
+      "contact": "Contact",
+      "press": "Press",
+      "partners": "Partners"
+    },
+    "copyright": "© 2024 AppZenith. All rights reserved."
+  },
+  "Features": {
+    "header": {
+      "title": "Nos principales fonctionnalités",
+      "description": "Voici quelques-unes des fonctionnalités que nous offrons."
+    },
+    "items": {
+      "item1": {
+        "title": "Développement d'applications iOS",
+        "description": "Développement d'applications iOS personnalisées adaptées aux besoins de votre entreprise."
+      },
+      "item2": {
+        "title": "Architecture et conception d'applications",
+        "description": "Planification stratégique de l'architecture pour des solutions d'applications évolutives et robustes."
+      },
+      "item3": {
+        "title": "Conception UI/UX",
+        "description": "Solutions de conception innovantes et conviviales pour des expériences utilisateur exceptionnelles."
+      },
+      "item4": {
+        "title": "Consultation et stratégie d'applications",
+        "description": "Consultation d'experts pour définir la meilleure stratégie pour le succès de votre application."
+      },
+      "item5": {
+        "title": "Prototypage d'applications",
+        "description": "Prototypes interactifs pour visualiser et affiner vos concepts d'applications."
+      },
+      "item6": {
+        "title": "Tests d'applications et assurance qualité",
+        "description": "Tests complets pour garantir une expérience d'application parfaite."
+      },
+      "item7": {
+        "title": "Maintenance et support des applications",
+        "description": "Maintenance et support continus pour garder votre application à jour et en bon état de fonctionnement."
+      },
+      "item8": {
+        "title": "Déploiement sur l'App Store",
+        "description": "Support complet pour le lancement de votre application sur l'App Store, y compris les processus de soumission et d'approbation."
+      }
+    },
+    "cta": {
+      "title": "Commencez dès aujourd'hui!",
+      "description": "Contactez-nous maintenant pour commencer votre parcours avec nos services.",
+      "buttonText": "Contactez-nous"
+    }
+  },
+  "Newsletter": {
+    "headline": "Stay in the loop",
+    "description": "Join our newsletter to get top news before anyone else.",
+    "emailPlaceholder": "Your best email…",
+    "subscriptionSuccess": "Thanks for your subscription to our newsletter!",
+    "submissionError": "Error submitting form, try again later",
+    "subscribing": "Subscribing...",
+    "subscribe": "Subscribe"
+  },
+  "Testimonials": {
+    "sectionHeader": "Don't take our word for it",
+    "sectionDescription": "Our clients rave about our innovative solutions and exceptional service. Here’s what they have to say:",
+    "testimonial1": "The mobile app development service was top-notch. It significantly improved our workflow and the user experience is fantastic.",
+    "testimonial1Company": "CEO, TechCorp",
+    "testimonial2": "Their design team transformed our user interface, making it much more engaging and user-friendly. Highly recommend their services!",
+    "testimonial2Company": "Product Manager, Creative Co.",
+    "testimonial3": "The healthcare solutions provided have greatly enhanced our patient management system. The technology is reliable and easy to use.",
+    "testimonial3Company": "Director, HealthNet",
+    "startProject": "Start Your Project Today"
+  },
+  "Zigzag": {
+    "tagline": "Reach goals that matter",
+    "mainTitle": "One product, unlimited solutions",
+    "description": "Discover our diverse range of services tailored to your unique needs, from innovative app solutions to advanced POS and healthcare systems.",
+    "feature1": {
+      "title": "iOS & Android App Development",
+      "subtitle": "Seamless Mobile Solutions",
+      "description": "Creating high-performance, user-friendly mobile apps for both iOS and Android platforms that meet your business goals.",
+      "bullet1": "High-performance apps for iOS and Android",
+      "bullet2": "Seamless user experiences",
+      "bullet3": "Custom solutions for diverse needs"
+    },
+    "feature2": {
+      "title": "UI/UX Design Excellence",
+      "subtitle": "Designs that Delight",
+      "description": "Enhancing user engagement through intuitive and aesthetically pleasing design that makes every interaction delightful.",
+      "bullet1": "Visually appealing interfaces",
+      "bullet2": "Intuitive user interactions",
+      "bullet3": "Customized design solutions"
+    },
+    "feature3": {
+      "title": "Healthcare and IoT Innovations",
+      "subtitle": "Smart Solutions for a Connected World",
+      "description": "Developing cutting-edge healthcare and IoT applications that harness the latest technology to enhance patient care and connectivity.",
+      "bullet1": "Advanced healthcare applications",
+      "bullet2": "Innovative IoT solutions",
+      "bullet3": "Enhanced connectivity and care"
+    },
+    "callToAction": "Start Your Project Today"
+  }
+}

@@ -1,20 +1,17 @@
 'use client'
 
+import { useState } from 'react'
+import { useTranslations } from 'next-intl';
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/modal-video'
 import FormModal from '../components/form'
-import { useState } from 'react'
 
 export default function Hero() {
-    const [modalIsOpen, setModalIsOpen] = useState(false)
+    const t = useTranslations('HomePage');
+    const [modalIsOpen, setModalIsOpen] = useState(false);
 
-    const openModal = () => {
-        setModalIsOpen(true)
-    }
-
-    const closeModal = () => {
-        setModalIsOpen(false)
-    }
+    const openModal = () => setModalIsOpen(true);
+    const closeModal = () => setModalIsOpen(false);
 
     return (
         <section>
@@ -66,28 +63,23 @@ export default function Hero() {
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                         <h1 className="h1 mb-4" data-aos="fade-up">
-                            AppZenith Elevate Your App Experience
+                            {t('heroTitle')} {/* Assuming you have the title translated */}
                         </h1>
                         <p
                             className="text-xl text-gray-400 mb-8"
                             data-aos="fade-up"
                             data-aos-delay="200"
                         >
-                            AppZenith specializes in diverse mobile app
-                            solutions, from POS systems to medical and IoT
-                            applications. We bring innovation and expertise to
-                            every project, delivering tailored apps that drive
-                            success.
+                            {t('heroDescription')} {/* Assuming you have the description translated */}
                         </p>
                         <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
                             <div data-aos="fade-up" data-aos-delay="400">
-                                <a
+                                <button
                                     className="btn text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0 rounded"
                                     onClick={openModal}
-                                    href="#0"
                                 >
-                                    Start Your Project Today
-                                </a>
+                                    {t('startProjectButton')} {/* Assuming you have the button text translated */}
+                                </button>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 'use client'
-// components/form.tsx
 import React, { useState, ChangeEvent, FormEvent } from 'react'
 import Modal from 'react-modal'
+import { useTranslations } from 'next-intl'
 
 interface FormModalProps {
     isOpen: boolean
@@ -18,6 +18,8 @@ interface FormData {
 }
 
 const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
+    const t = useTranslations('FormModal')
+
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
@@ -52,7 +54,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
             })
             setIsLoading(false)
             if (response.ok) {
-                setNotification({ message: 'Email sent successfully!', type: 'success' })
+                setNotification({ message: t('emailSuccess'), type: 'success' })
                 setFormData({
                     name: '',
                     email: '',
@@ -64,12 +66,12 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                 console.log('Email sent successfully')
                 onRequestClose()
             } else {
-                setNotification({ message: 'Error submitting form, try again later', type: 'error' })
+                setNotification({ message: t('emailError'), type: 'error' })
                 console.error('Error sending email')
             }
         } catch (error) {
             setIsLoading(false)
-            setNotification({ message: 'Error submitting form, try again later', type: 'error' })
+            setNotification({ message: t('emailError'), type: 'error' })
             console.error('Error:', error)
         }
     }
@@ -82,35 +84,35 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
         <Modal
             isOpen={isOpen}
             onRequestClose={onRequestClose}
-            contentLabel="Request Service"
+            contentLabel={t('modalTitle')}
             className="fixed inset-0 flex items-center justify-center p-4 bg-gray-800 bg-opacity-75 z-10"
             overlayClassName="fixed inset-0 bg-gray-800 bg-opacity-75"
             style={customStyles}
         >
-            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto overflow-auto max-h-full relative">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto max-h-full relative">
                 <button
                     onClick={onRequestClose}
-                    className="absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                    className="absolute -mt-6 -mr-6 top-2 right-2 bg-red-500 text-white rounded-full p-2 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
                 <h2 className="text-2xl font-bold mb-4 text-gray-600 text-center">
-                    Start Your Project Today
+                    {t('modalTitle')}
                 </h2>
                 {notification && (
                     <div className={`my-2 p-2 rounded ${notification.type === 'success' ? 'text-green-800 bg-green-200' : 'text-red-800 bg-red-200'} text-center`}>
                         {notification.message}
                     </div>
                 )}
-                <form onSubmit={handleSubmit} className="space-y-2">
+                <form className="space-y-2 overflow-auto" onSubmit={handleSubmit}>
                     <div>
                         <label
                             htmlFor="name"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Name:
+                            {t('nameLabel')}:
                         </label>
                         <input
                             type="text"
@@ -127,7 +129,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                             htmlFor="email"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Email:
+                            {t('emailLabel')}:
                         </label>
                         <input
                             type="email"
@@ -144,7 +146,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                             htmlFor="projectTitle"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Project Title:
+                            {t('projectTitleLabel')}:
                         </label>
                         <input
                             type="text"
@@ -161,7 +163,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                             htmlFor="projectDetails"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Project Details:
+                            {t('projectDetailsLabel')}:
                         </label>
                         <textarea
                             id="projectDetails"
@@ -177,7 +179,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                             htmlFor="budget"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Budget:
+                            {t('budgetLabel')}:
                         </label>
                         <input
                             type="number"
@@ -194,7 +196,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                             htmlFor="deadline"
                             className="block text-sm font-medium text-gray-700"
                         >
-                            Deadline:
+                            {t('deadlineLabel')}:
                         </label>
                         <input
                             type="date"
@@ -212,7 +214,7 @@ const FormModal: React.FC<FormModalProps> = ({ isOpen, onRequestClose }) => {
                         disabled={isLoading}
                         className="w-full bg-green-600 text-white py-3 rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                     >
-                        {isLoading ? 'Submitting...' : 'Submit'}
+                        {isLoading ? t('submitting') : t('submit')}
                     </button>
                 </form>
             </div>

@@ -1,0 +1,170 @@
+{
+  "HomePage": {
+    "title": "Construisez l'avenir avec",
+    "highlight": "AppZenith",
+    "description": "Une solution complète pour vos besoins en développement mobile.",
+    "cta": "Commencez maintenant",
+    "cta2": "Regarder la vidéo",
+    "heroTitle": "AppZenith Élevez Votre Expérience d'Application",
+    "heroDescription": "AppZenith se spécialise dans diverses solutions d'applications mobiles, des systèmes POS aux applications médicales et IoT. Nous apportons innovation et expertise à chaque projet, en fournissant des applications sur mesure qui garantissent le succès.",
+    "startProjectButton": "Commencez Votre Projet Aujourd'hui"
+  },
+  "FormModal": {
+    "modalTitle": "Commencez Votre Projet Aujourd'hui",
+    "nameLabel": "Nom",
+    "emailLabel": "Email",
+    "projectTitleLabel": "Titre du Projet",
+    "projectDetailsLabel": "Détails du Projet",
+    "budgetLabel": "Budget",
+    "deadlineLabel": "Date Limite",
+    "submitting": "Envoi en cours...",
+    "submit": "Soumettre",
+    "emailSuccess": "Email envoyé avec succès!",
+    "emailError": "Erreur lors de la soumission du formulaire, réessayez plus tard"
+  },
+  "FAQ": {
+    "title": "Questions Fréquemment Posées",
+    "description": "Trouvez des réponses aux questions les plus courantes sur nos services.",
+    "question1": {
+      "title": "Quels services proposez-vous?",
+      "answer": "Nous offrons une gamme de services de développement d'applications mobiles, y compris le développement d'applications iOS, l'architecture et la conception d'applications, la conception UI/UX, la consultation et la stratégie d'application, le prototypage d'applications, les tests et l'assurance qualité des applications, la maintenance et le support des applications, et le déploiement sur l'App Store."
+    },
+    "question2": {
+      "title": "Comment puis-je commencer un projet avec AppZenith?",
+      "answer": "Vous pouvez commencer votre projet en nous contactant via notre site web. Cliquez sur le bouton 'Commencez Votre Projet Aujourd'hui' et remplissez le formulaire de contact. Nous vous contacterons dès que possible pour discuter des exigences de votre projet."
+    },
+    "question3": {
+      "title": "Fournissez-vous une maintenance et un support continus?",
+      "answer": "Oui, nous fournissons une maintenance et un support continus pour garantir que votre application reste à jour et fonctionne sans problème. Notre équipe est disponible pour vous aider avec tout problème ou mise à jour nécessaire pour votre application."
+    },
+    "question4": {
+      "title": "Quel est le processus de déploiement sur l'App Store?",
+      "answer": "Notre service de déploiement sur l'App Store inclut un support complet pour lancer votre application sur l'App Store. Nous nous occupons des processus de soumission et d'approbation pour garantir que votre application soit publiée avec succès et disponible au téléchargement."
+    },
+    "question5": {
+      "title": "Pouvez-vous aider à la conception ainsi qu'au développement d'applications?",
+      "answer": "Absolument! Notre équipe se spécialise à la fois dans la conception UI/UX et le développement pour créer des applications visuellement attrayantes et conviviales qui répondent aux besoins de votre entreprise."
+    }
+  },
+  "Header": {
+    "siteName": "AppZenith",
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "contact": "Contact",
+    "getStarted": "Commencer",
+    "language": "Langue"
+  },
+  "Footer": {
+    "description": "AppZenith offre des services de développement d'applications complets.",
+    "services": {
+      "title": "Nos Services",
+      "mobileAppDevelopment": "Développement d'Applications Mobiles",
+      "uiUxDesign": "Conception UI/UX",
+      "consulting": "Consultation"
+    },
+    "resources": {
+      "title": "Ressources",
+      "blog": "Blog",
+      "caseStudies": "Études de Cas",
+      "faq": "FAQ",
+      "termsOfService": "Conditions d'Utilisation",
+      "privacyPolicy": "Politique de Confidentialité"
+    },
+    "company": {
+      "title": "Entreprise",
+      "aboutUs": "À Propos de Nous",
+      "careers": "Carrières",
+      "contact": "Contact",
+      "press": "Presse",
+      "partners": "Partenaires"
+    },
+    "copyright": "© 2024 AppZenith. Tous droits réservés."
+  },
+  "Features": {
+    "header": {
+      "title": "Nos principales fonctionnalités",
+      "description": "Voici quelques-unes des fonctionnalités que nous offrons."
+    },
+    "items": {
+      "item1": {
+        "title": "Développement d'applications iOS",
+        "description": "Développement d'applications iOS personnalisées adaptées aux besoins de votre entreprise."
+      },
+      "item2": {
+        "title": "Architecture et conception d'applications",
+        "description": "Planification stratégique de l'architecture pour des solutions d'applications évolutives et robustes."
+      },
+      "item3": {
+        "title": "Conception UI/UX",
+        "description": "Solutions de conception innovantes et conviviales pour des expériences utilisateur exceptionnelles."
+      },
+      "item4": {
+        "title": "Consultation et stratégie d'applications",
+        "description": "Consultation d'experts pour définir la meilleure stratégie pour le succès de votre application."
+      },
+      "item5": {
+        "title": "Prototypage d'applications",
+        "description": "Prototypes interactifs pour visualiser et affiner vos concepts d'applications."
+      },
+      "item6": {
+        "title": "Tests d'applications et assurance qualité",
+        "description": "Tests complets pour garantir une expérience d'application parfaite."
+      },
+      "item7": {
+        "title": "Maintenance et support des applications",
+        "description": "Maintenance et support continus pour garder votre application à jour et en bon état de fonctionnement."
+      },
+      "item8": {
+        "title": "Déploiement sur l'App Store",
+        "description": "Support complet pour le lancement de votre application sur l'App Store, y compris les processus de soumission et d'approbation."
+      }
+    },
+    "cta": {
+      "title": "Commencez dès aujourd'hui!",
+      "description": "Contactez-nous maintenant pour commencer votre parcours avec nos services.",
+      "buttonText": "Contactez-nous"
+    }
+  },
+  "Newsletter": {
+    "headline": "Restez dans la boucle",
+    "description": "Rejoignez notre newsletter pour obtenir les dernières nouvelles avant tout le monde.",
+    "emailPlaceholder": "Votre meilleur email...",
+    "subscriptionSuccess": "Merci pour votre abonnement à notre newsletter!",
+    "submissionError": "Erreur lors de la soumission du formulaire, réessayez plus tard",
+    "subscribing": "Abonnement en cours...",
+    "subscribe": "S'abonner"
+  },
+  "Testimonials": {
+    "sectionHeader": "Ne nous croyez pas sur parole",
+    "sectionDescription": "Nos clients sont ravis de nos solutions innovantes et de notre service exceptionnel. Voici ce qu'ils ont à dire:",
+    "testimonial1": "Le service de développement d'applications mobiles était de premier ordre. Il a considérablement amélioré notre flux de travail et l'expérience utilisateur est fantastique.",
+    "testimonial1Company": "PDG, TechCorp",
+    "testimonial2": "Leur équipe de conception a transformé notre interface utilisateur, la rendant beaucoup plus engageante et conviviale. Je recommande vivement leurs services!",
+    "testimonial2Company": "Responsable de produit, Creative Co.",
+    "testimonial3": "Les solutions de santé fournies ont considérablement amélioré notre système de gestion des patients. La technologie est fiable et facile à utiliser.",
+    "testimonial3Company": "Directeur, HealthNet",
+    "startProject": "Commencez Votre Projet Aujourd'hui"
+  },
+  "Zigzag": {
+    "tagline": "Atteignez des objectifs qui comptent",
+    "mainTitle": "Un produit, des solutions illimitées",
+    "description": "Découvrez notre gamme diversifiée de services adaptés à vos besoins uniques, des solutions d'applications innovantes aux systèmes POS avancés et aux systèmes de santé.",
+    "feature1": {
+      "title": "Développement d'applications iOS et Android",
+      "subtitle": "Solutions mobiles transparentes",
+      "description": "Créer des applications mobiles performantes et conviviales pour les plateformes iOS et Android qui répondent à vos objectifs commerciaux.",
+      "bullet1": "Applications performantes pour iOS et Android",
+      "bullet2": "Expériences utilisateur transparentes",
+      "bullet3": "Solutions personnalisées pour des besoins diversifiés"
+    },
+    "feature2": {
+      "title": "Excellence en conception UI/UX",
+      "subtitle": "Des conceptions qui enchantent",
+      "description": "Améliorer l'engagement des utilisateurs grâce à une conception intuitive et esthétiquement plaisante qui rend chaque interaction agréable.",
+      "bullet1": "Interfaces visuellement attrayantes",
+      "bullet2": "Expériences utilisateur intuitives",
+      "bullet3": "Design centré sur l’utilisateur"
+    }
+  }
+}

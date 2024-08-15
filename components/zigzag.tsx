@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-
+import { useTranslations } from 'next-intl'
 import FeatImage01 from '@/public/images/features-03-image-01.png'
 import FeatImage02 from '@/public/images/features-03-image-02.png'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
@@ -9,6 +9,7 @@ import FormModal from '../components/form'
 import { useState } from 'react'
 
 export default function Zigzag() {
+    const t = useTranslations('Zigzag')
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
     const openModal = () => {
@@ -27,15 +28,13 @@ export default function Zigzag() {
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                         <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
-                            Reach goals that matter
+                            {t('tagline')}
                         </div>
                         <h1 className="h2 mb-4">
-                            One product, unlimited solutions
+                            {t('mainTitle')}
                         </h1>
                         <p className="text-xl text-gray-400">
-                            Discover our diverse range of services tailored to
-                            your unique needs, from innovative app solutions to
-                            advanced POS and healthcare systems.
+                            {t('description')}
                         </p>
                     </div>
 
@@ -63,15 +62,13 @@ export default function Zigzag() {
                             >
                                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                                        iOS & Android App Development
+                                        {t('feature1.title')}
                                     </div>
                                     <h3 className="h3 mb-3">
-                                        Seamless Mobile Solutions
+                                        {t('feature1.subtitle')}
                                     </h3>
                                     <p className="text-xl text-gray-400 mb-4">
-                                        Creating high-performance, user-friendly
-                                        mobile apps for both iOS and Android
-                                        platforms that meet your business goals.
+                                        {t('feature1.description')}
                                     </p>
                                     <ul className="text-lg text-gray-400 -mb-2">
                                         <li className="flex items-center mb-2">
@@ -83,8 +80,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                High-performance apps for iOS
-                                                and Android
+                                                {t('feature1.bullet1')}
                                             </span>
                                         </li>
                                         <li className="flex items-center mb-2">
@@ -96,7 +92,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Seamless user experiences
+                                                {t('feature1.bullet2')}
                                             </span>
                                         </li>
                                         <li className="flex items-center">
@@ -108,8 +104,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Custom solutions for diverse
-                                                needs
+                                                {t('feature1.bullet3')}
                                             </span>
                                         </li>
                                     </ul>
@@ -139,16 +134,13 @@ export default function Zigzag() {
                             >
                                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                                        UI/UX Design Excellence
+                                        {t('feature2.title')}
                                     </div>
                                     <h3 className="h3 mb-3">
-                                        Designs that Delight
+                                        {t('feature2.subtitle')}
                                     </h3>
                                     <p className="text-xl text-gray-400 mb-4">
-                                        Enhancing user engagement through
-                                        intuitive and aesthetically pleasing
-                                        design that makes every interaction
-                                        delightful.
+                                        {t('feature2.description')}
                                     </p>
                                     <ul className="text-lg text-gray-400 -mb-2">
                                         <li className="flex items-center mb-2">
@@ -160,7 +152,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Visually appealing interfaces
+                                                {t('feature2.bullet1')}
                                             </span>
                                         </li>
                                         <li className="flex items-center mb-2">
@@ -172,7 +164,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Intuitive user interactions
+                                                {t('feature2.bullet2')}
                                             </span>
                                         </li>
                                         <li className="flex items-center">
@@ -184,7 +176,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Customized design solutions
+                                                {t('feature2.bullet3')}
                                             </span>
                                         </li>
                                     </ul>
@@ -214,16 +206,13 @@ export default function Zigzag() {
                             >
                                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                                        Healthcare and IoT Innovations
+                                        {t('feature3.title')}
                                     </div>
                                     <h3 className="h3 mb-3">
-                                        Smart Solutions for a Connected World
+                                        {t('feature3.subtitle')}
                                     </h3>
                                     <p className="text-xl text-gray-400 mb-4">
-                                        Developing cutting-edge healthcare and
-                                        IoT applications that harness the latest
-                                        technology to enhance patient care and
-                                        connectivity.
+                                        {t('feature3.description')}
                                     </p>
                                     <ul className="text-lg text-gray-400 -mb-2">
                                         <li className="flex items-center mb-2">
@@ -235,7 +224,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Advanced healthcare applications
+                                                {t('feature3.bullet1')}
                                             </span>
                                         </li>
                                         <li className="flex items-center mb-2">
@@ -247,7 +236,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Innovative IoT solutions
+                                                {t('feature3.bullet2')}
                                             </span>
                                         </li>
                                         <li className="flex items-center">
@@ -259,7 +248,7 @@ export default function Zigzag() {
                                                 <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                             </svg>
                                             <span>
-                                                Enhanced connectivity and care
+                                                {t('feature3.bullet3')}
                                             </span>
                                         </li>
                                     </ul>
@@ -276,7 +265,7 @@ export default function Zigzag() {
                         href="#0"
                         onClick={openModal}
                     >
-                        Start Your Project Today
+                        {t('callToAction')}
                     </a>
                 </div>
             </div>

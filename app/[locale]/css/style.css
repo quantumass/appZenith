@@ -20,3 +20,12 @@
 [x-cloak=""] {
     display: none;
 }
+
+/* global styles or CSS module */
+body {
+    font-family: 'Inter', sans-serif; /* Default font */
+}
+
+[lang="ar"] body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}

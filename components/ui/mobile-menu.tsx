@@ -2,12 +2,14 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
 
   const trigger = useRef<HTMLButtonElement>(null)
   const mobileNav = useRef<HTMLDivElement>(null)
+  const t = useTranslations('Header')
 
   // close the mobile menu on click outside
   useEffect(() => {
@@ -60,38 +62,42 @@ export default function MobileMenu() {
         style={mobileNavOpen ? { maxHeight: mobileNav.current?.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0.8 }}
       >
         <ul className="bg-gray-800 px-4 py-2">
-        <li>
-                <Link
-                  href="/"
-                  className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
-                >
-                  Contact
-                </Link>
-              </li>
+          <li>
+            <Link
+              href="/"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              {t('home')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/about"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              {t('about')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              {t('services')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:bg-purple-700 transition duration-150 ease-in-out"
+              onClick={() => setMobileNavOpen(false)}
+            >
+              {t('contact')}
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

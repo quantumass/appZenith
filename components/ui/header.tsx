@@ -2,10 +2,22 @@ import Link from 'next/link'
 import MobileMenu from './mobile-menu'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
+import { useTranslations } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import dynamic from 'next/dynamic'
+import {getLocale} from 'next-intl/server';
 
-export default function Header() {
+// Dynamically import the dropdown component to ensure it's only rendered on the client
+const LanguageDropdown = dynamic(() => import('./dropdown'), { ssr: false })
+
+export default async function Header() {
+  const t = useTranslations('Header')
+  const messages = await getMessages()
+  const locale = await getLocale();
+
   return (
-    <header className="absolute w-full z-30">
+    <header className="absolute w-full z-30 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-20">
           {/* Site branding */}
@@ -13,7 +25,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="block flex items-center text-purple-600 font-extrabold" aria-label="AppZenith">
               <Image className="rounded-full" src={Logo} width={80} height={80} alt="AppZenith" />
-              AppZenith
+              {t('siteName')}
             </Link>
           </div>
 
@@ -26,7 +38,7 @@ export default function Header() {
                   href="/"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Home
+                  {t('home')}
                 </Link>
               </li>
               <li>
@@ -34,7 +46,7 @@ export default function Header() {
                   href="/about"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  About
+                  {t('about')}
                 </Link>
               </li>
               <li>
@@ -42,7 +54,7 @@ export default function Header() {
                   href="/services"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Services
+                  {t('services')}
                 </Link>
               </li>
               <li>
@@ -50,19 +62,24 @@ export default function Header() {
                   href="/contact"
                   className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
                 >
-                  Contact
+                  {t('contact')}
                 </Link>
               </li>
               <li>
                 <Link href="/get-started" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3 rounded">
-                  Get Started
+                  {t('getStarted')}
                 </Link>
+              </li>
+              {/* Language Dropdown */}
+              <li className="ml-4">
+                <LanguageDropdown locale={locale}/>
               </li>
             </ul>
           </nav>
 
-          <MobileMenu />
-
+          <NextIntlClientProvider messages={messages}>
+            <MobileMenu />
+          </NextIntlClientProvider>
         </div>
       </div>
     </header>

@@ -2,8 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+  const t = useTranslations('Footer')
+
   return (
     <footer>
       <div className="py-12 md:py-16">
@@ -20,7 +23,7 @@ export default function Footer() {
                   <Image className="rounded-full" src={Logo} width={80} height={80} alt="AppZenith" />
                 </Link>
               </div>
-              <div className="text-gray-400">AppZenith helps you create stunning mobile apps with ease. Explore our solutions and services to transform your app ideas into reality.</div>
+              <div className="text-gray-400">{t('description')}</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
@@ -28,60 +31,86 @@ export default function Footer() {
 
               {/* 2nd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Services</h6>
+                <h6 className="text-gray-200 font-medium mb-1">{t('services.title')}</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/services/mobile-app-development" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Mobile App Development</Link>
+                    <Link href="/services/mobile-app-development" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('services.mobileAppDevelopment')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/services/ui-ux-design" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">UI/UX Design</Link>
+                    <Link href="/services/ui-ux-design" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('services.uiUxDesign')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/services/consulting" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Consulting</Link>
+                    <Link href="/services/consulting" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('services.consulting')}
+                    </Link>
                   </li>
                 </ul>
               </div>
 
               {/* 3rd block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Resources</h6>
+                <h6 className="text-gray-200 font-medium mb-1">{t('resources.title')}</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/blog" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Blog</Link>
+                    <Link href="/blog" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('resources.blog')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/case-studies" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Case Studies</Link>
+                    <Link href="/case-studies" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('resources.caseStudies')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/faq" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">FAQ</Link>
+                    <Link href="/faq" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('resources.faq')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/terms-of-service" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Terms of Service</Link>
+                    <Link href="/terms-of-service" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('resources.termsOfService')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/privacy-policy" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Privacy Policy</Link>
+                    <Link href="/privacy-policy" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('resources.privacyPolicy')}
+                    </Link>
                   </li>
                 </ul>
               </div>
 
               {/* 4th block */}
               <div className="text-sm">
-                <h6 className="text-gray-200 font-medium mb-1">Company</h6>
+                <h6 className="text-gray-200 font-medium mb-1">{t('company.title')}</h6>
                 <ul>
                   <li className="mb-1">
-                    <Link href="/about" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">About Us</Link>
+                    <Link href="/about" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('company.aboutUs')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/careers" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Careers</Link>
+                    <Link href="/careers" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('company.careers')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/contact" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Contact</Link>
+                    <Link href="/contact" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('company.contact')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/press" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Press</Link>
+                    <Link href="/press" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('company.press')}
+                    </Link>
                   </li>
                   <li className="mb-1">
-                    <Link href="/partners" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">Partners</Link>
+                    <Link href="/partners" className="text-gray-400 hover:text-gray-100 transition duration-150 ease-in-out">
+                      {t('company.partners')}
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -135,7 +164,7 @@ export default function Footer() {
             </ul>
 
             {/* Copyrights note */}
-            <p className="text-sm text-gray-400 md:order-2">&copy; {new Date().getFullYear()} AppZenith. All rights reserved.</p>
+            <p className="text-sm text-gray-400 md:order-2">&copy; {new Date().getFullYear()} {t('copyright')} </p>
 
           </div>
         </div>
