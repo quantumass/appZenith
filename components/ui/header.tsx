@@ -70,16 +70,21 @@ export default async function Header() {
                   {t('getStarted')}
                 </Link>
               </li>
-              {/* Language Dropdown */}
-              <li className="ml-4">
-                <LanguageDropdown locale={locale}/>
-              </li>
             </ul>
           </nav>
 
-          <NextIntlClientProvider messages={messages}>
-            <MobileMenu />
-          </NextIntlClientProvider>
+          {/* Language Dropdown */}
+          <div className='flex items-center'>
+            <ul>
+              <li className="mx-2">
+                  <LanguageDropdown locale={locale}/>
+                </li>
+            </ul>
+
+            <NextIntlClientProvider messages={messages}>
+              <MobileMenu />
+            </NextIntlClientProvider>
+          </div>
         </div>
       </div>
     </header>
